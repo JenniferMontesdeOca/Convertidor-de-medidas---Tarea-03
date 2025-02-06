@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de Medidas</title>
+    <link href="./resources/css/styles.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Convertidor de Medidas</h1>
+        <input type="number" id="inputMeasure" placeholder="Ingrese cantidad de dinero">
+        <select id="inputUnit">
+            <option value="M">Metros</option>
+            <option value="C">Centímetros</option>
+            <option value="MM">Milímetros</option>
+        </select>
+        <button onclick="convertMeasure()">Convertir</button>
+        <div class="medidas">
+            <div class="medida">
+                <h2>Metros</h2>
+                <p id="metrosValue">0</p>
+            </div>
+            <div class="medida">
+                <h2>Cnetímetros</h2>
+                <p id= "centimetrosValue">0</p>
+            </div>
+            <div class="medida">
+                <h2>Milímetros</h2>
+                <p id="milimetrosValue">0</p>
+            </div>
+        </div>
+    </div>
+    <script src="./resources/js/script.js"></script>
+</html>
